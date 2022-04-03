@@ -1,0 +1,131 @@
+<h1>HTML</h1>
+
+<h2>Emmet / Zen Coding</h2>
+
+<!-- 
+    Etiket isimlerini direkt verebiliyoruz.
+    + Kardeş element oluşturuyor.
+    > Içinde öğe oluşturuyor.
+    ^ Yukarı çıkıyor ve öğe oluşturuyor.
+    * Çarp -> p*3 (Üç adet paragraf anlamına geliyor.)
+    lorem -> Çok uzun yazı oluşturur.
+    lorem4 -> 4 Kelimelik yazı oluşturur.
+    . -> class oluşturmak için kullanılıyor.
+    # -> ID oluşturmak için kullanılıyor.
+-->
+
+<h1></h1> <!-- h1 + h2 yaptığımız zaman bu yapı otomatik oluşturuluyor-->
+<h2></h2> <!-- h1 + h2 yaptığımız zaman bu yapı otomatik oluşturuluyor-->
+
+<!-- h1+p+p+h2+p+p+p+p -->
+<h1></h1>
+<p></p>
+<p></p>
+<h2></h2>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<!-- h1+p+p+h2+p+p+p+p -> h1+p*2+h2+p*4 --> <!-- Çarp özelliği ile yukarıdakinin aynısını yapabiliyoruz--> 
+<h1></h1>
+<p></p>
+<p></p>
+<h2></h2>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<!-- ul>li --> 
+<ul>
+    <li></li>
+</ul>
+<!-- ul>li*5 --> 
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<!-- ul>li*3^p+h3+p*2 -->
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<p></p>
+<h3></h3>
+<p></p>
+<p></p>
+
+<!-- lorem (Anlamsız yazı dizisi)-->
+<!-- p>lorem -->
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et autem explicabo nobis magnam consectetur recusandae accusantium maiores fugiat iusto, incidunt impedit reiciendis quae saepe? Aliquam iusto recusandae voluptate eum itaque.</p>
+<!-- p>lorem4 (4 Kelimelik yazı dizisi) -->
+<p>Lorem ipsum dolor sit.</p>
+
+<!-- ul>li*3>lorem1^p*2>lorem4+h3>lorem1 (Hatalı)-->
+<ul>
+    <li>Lorem.</li>
+    <li>Facilis!</li>
+    <li>Eius?</li>
+    <p>
+        Lorem ipsum dolor sit.
+        <h3>Lorem.</h3>
+    </p>
+    <p>
+        Culpa quisquam quidem totam.
+        <h3>Laboriosam?</h3>
+    </p>
+</ul>
+
+<!-- ul>li*3>lorem1^^p*2>lorem4^h3>lorem1 -->
+<ul>
+    <li>Lorem.</li>
+    <li>Id?</li>
+    <li>Eveniet?</li>
+</ul>
+<p>Lorem ipsum dolor sit.</p>
+<p>Aliquid magnam tenetur ipsum.</p>
+<h3>Lorem.</h3>
+
+<!-- . -> class oluşturmak için kullanılıyor. -->
+<!-- h3.deneme>lorem1 -->
+<h3 class="deneme">Lorem.</h3>
+<!-- # -> ID oluşturmak için kullanılıyor. -->
+<!-- h3#IdOlussun>lorem1 -->
+<h3 id="IdOlussun">Lorem.</h3>
+<!-- h3.deneme#IdOlussun>lorem1 -->
+<h3 class="deneme" id="IdOlussun">Lorem.</h3>
+<!-- h3.deneme.html -->
+<h3 class="deneme html"></h3>
+<!-- .tepki -->
+<div class="tepki"></div>
+<!-- ul>li.tepki -->
+<ul>
+    <li class="tepki"></li>
+</ul>
+<!-- ul>.tepki -->
+<ul>
+    <li class="tepki"></li>
+</ul>
+
+<!-- ul>li.item$*4 -->
+<ul>
+    <li class="item1"></li>
+    <li class="item2"></li>
+    <li class="item3"></li>
+    <li class="item4"></li>
+</ul>
+
+<!-- div>p#item*6>lorem10 -->
+<div>
+    <p id="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, reprehenderit?</p>
+    <p id="item">Sed similique fugiat nobis, corporis vero iusto ad blanditiis laudantium.</p>
+    <p id="item">Cupiditate repellat, vero rem error sed dolores vitae libero laudantium.</p>
+    <p id="item">Facere aspernatur consequuntur fugit, laborum labore cupiditate quas tempore ipsa?</p>
+    <p id="item">Eos, iusto odio! Temporibus autem veniam illum error ipsum! Recusandae?</p>
+    <p id="item">Aliquam recusandae qui cupiditate amet quos repellendus ducimus quo saepe!</p>
+</div>
