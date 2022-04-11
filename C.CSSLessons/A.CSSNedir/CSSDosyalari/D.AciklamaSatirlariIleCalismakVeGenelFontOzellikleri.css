@@ -1,0 +1,21 @@
+/* 
+    Açıklama satırı
+*/
+
+body {
+    background-color: aqua;
+    color: blue;
+}
+
+h2 {
+    color:red; 
+    font-size: 74px;
+    text-transform: uppercase;
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+p { 
+    font-size: 40px;
+}
